@@ -32,7 +32,7 @@
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link" href="https://htmlacademy.ru">
               Html Academy
             </a>
           </li>
@@ -42,11 +42,85 @@
   </header>
 
   <main class="page__main">
+    <section class="page__hero">
+      <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
+      <img class="greeting-img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
+    </section>
 
+    <section class="page__catalog catalog">
+      <h2 class="catalog__title">Фото и видео</h2>
+      <p class="catalog__text">
+        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+      </p>
+
+      <ul class="catalog__list reset-list">
+        <li class="catalog__item">
+          <img src="img/catalog-non-native-spaces.jpg" width="280" height="280" alt="Неродные просторы.">
+          <p class="catalog__description">
+            Неродные просторы
+            <span class="catalog__author">Автор фото: Борис</span>
+          </p>
+          <span class="catalog__likes-quantity">1350</span>
+        </li>
+        <li class="catalog__item">
+          <img src="img/catalog-local-vegetation.jpg" width="280" height="280" alt="Местная растительность.">
+          <p class="catalog__description">
+            Местная растительность
+            <span class="catalog__author">Автор фото: Сергей</span>
+          </p>
+          <span class="catalog__likes-quantity">143</span>
+        </li>
+        <li class="catalog__item">
+          <img src="img/catalog-road-to-the-north.jpg" width="280" height="280" alt="Дорога на север.">
+          <p class="catalog__description">
+            Дорога на север
+            <span class="catalog__author">Автор фото: Петр</span>
+          </p>
+          <span class="catalog__likes-quantity">96</span>
+        </li>
+        <li class="catalog__item">
+          <img src="img/catalog-devil-bridge.jpg" width="280" height="280" alt="Мост дъявола.">
+          <p class="catalog__description">
+            Мост дьявола
+            <span class="catalog__author">Автор фото: Антон</span>
+          </p>
+          <span class="catalog__likes-quantity">254</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="page__video-presentation video-presentation">
+      <h2 class="video-presentation__title">Все еще сомневаетесь?</h2>
+      <p class="video-presentation__text">
+        Все еще сомневаетесь? Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+      </p>
+    </section>
   </main>
 
-  <footer class="footer">
-
-  </footer>
+    <footer class="footer">
+      <div class="footer__description">
+        <span class="footer__description-text">#VisitSedona</span>
+      </div>
+      <div class="footer__social social">
+        <ul class="social__list reset-list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
+          <p class="copyright__text">
+            Разработано
+          </p>
+        </a>
+      </div>
+    </footer>
 </body>
 </html>
