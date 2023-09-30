@@ -1,3 +1,10 @@
+.additional-advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 31px 18px 46px 18px;
+}
+
 .additional-advantages-list__title {
   text-align: start;
   font-size: 18px;
