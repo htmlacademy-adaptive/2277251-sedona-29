@@ -1,1 +1,86 @@
-// Временный комментарий
+.review-form__title {
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.review-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.review-form__field {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.review-form__contact-info-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.review-form__field-phone::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 1;
+}
+
+.review-form__field-email::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 1;
+}
+
+.review-form__list-wrapper-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.review-form__describe-emotions-title {
+  color: #000000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.review-form__send-review-button {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.review-form__text-required-fields {
+  color: rgba(51, 51, 51, 0.6);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
