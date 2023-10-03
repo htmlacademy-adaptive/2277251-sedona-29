@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,7 +43,7 @@
   </header>
 
   <main class="page__main">
-    <section class="page__hero">
+    <section class="page__hero hero">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <img class="greeting-img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
     </section>
@@ -62,7 +63,9 @@
             Неродные просторы
             <span class="catalog__author">Автор фото: Борис</span>
           </p>
-          <span class="catalog__likes-quantity">1350</span>
+          <button class="catalog__likes-quantity" type="button">
+            1350
+          </button>
         </li>
         <li class="catalog__item">
           <a class="catalog__link-image" href="#">
@@ -72,7 +75,7 @@
             Местная растительность
             <span class="catalog__author">Автор фото: Сергей</span>
           </p>
-          <span class="catalog__likes-quantity">143</span>
+          <button class="catalog__likes-quantity" type="button">143</button>
         </li>
         <li class="catalog__item">
           <a class="catalog__link-image" href="#">
@@ -82,7 +85,7 @@
             Дорога на север
             <span class="catalog__author">Автор фото: Петр</span>
           </p>
-          <span class="catalog__likes-quantity">96</span>
+          <button class="catalog__likes-quantity" type="button">96</button>
         </li>
         <li class="catalog__item">
           <a class="catalog__link-image" href="#">
@@ -92,7 +95,7 @@
             Мост дьявола
             <span class="catalog__author">Автор фото: Антон</span>
           </p>
-          <span class="catalog__likes-quantity">254</span>
+          <button class="catalog__likes-quantity" type="button">254</button>
         </li>
       </ul>
     </section>
@@ -102,34 +105,30 @@
       <p class="video-presentation__text">
         Все еще сомневаетесь? Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <img src="img/catalog-video-presentation-image.jpg" width="280" height="177" alt="#">
+      <a class="video-presentation__link" href="#">
+        <img src="img/catalog-video-presentation-image.jpg" width="280" height="177" alt="#">
+      </a>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__description">
-      <span class="footer__description-text">#VisitSedona</span>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list reset-list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
-        <p class="copyright__text">
-          Разработано
-        </p>
-      </a>
-    </div>
+    <span class="footer__description-text">#VisitSedona</span>
+    <ul class="footer__social-list social reset-list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
+      <p class="copyright__text">
+        Разработано
+      </p>
+    </a>
   </footer>
 </body>
 </html>

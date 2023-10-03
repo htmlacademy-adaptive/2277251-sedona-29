@@ -1,0 +1,10 @@
+@import "common/variables.scss";
+
+.copyright__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $secondary-color;
+  text-decoration: none;
+}

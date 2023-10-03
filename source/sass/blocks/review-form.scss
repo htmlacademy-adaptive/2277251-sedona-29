@@ -1,0 +1,132 @@
+@import "common/variables.scss";
+
+.review-form {
+  padding: 24px 20px 22px 20px;
+}
+
+.review-form__title {
+  margin: 0;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.review-form__introduce-list {
+  margin: 0 0 39px 0;
+}
+
+.review-form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $additional-color;
+}
+
+.review-form__field {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.review-form__contact-info {
+  padding: 24px 0 34px 0;
+}
+
+.review-form__contact-info-title {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.review-form__field-phone::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 1;
+}
+
+.review-form__field-email::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  opacity: 1;
+}
+
+.review-form__list-wrapper {
+  padding: 24px 0;
+}
+
+.review-form__list-wrapper-title {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.review-form__describe-emotions {
+  padding: 24px 0 22px 0;
+}
+
+.review-form__describe-emotions-title {
+  margin: 0;
+  color: $secondary-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.review-form__send-review-button {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: $main-color;
+  color: #ffffff;
+}
+
+.review-form__text-required-fields {
+  color: rgba(51, 51, 51, 0.6);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}

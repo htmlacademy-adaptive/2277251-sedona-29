@@ -1,0 +1,30 @@
+@import "common/variables.scss";
+
+.additional-advantages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 31px 18px 46px 18px;
+}
+
+.additional-advantages-list__title {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.additional-advantages-list__description {
+  text-align: start;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $additional-color;
+}

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,7 +43,7 @@
   </header>
 
   <main class="page__main">
-    <section class="page__hero">
+    <section class="page__hero hero">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <img class="greeting-img" src="img/sedona-greeting.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks.">
     </section>
@@ -58,15 +59,17 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages-list reset-list">
         <li class="advantages-list__item">
-          <h3 class="advantages-list__title">Настоящий городок</h3>
-          <span class="advantages-list__numeration">— №1 —</span>
-          <p class="advantages-list__description">
-            Седона — не аттракцион для туристов, там течёт своя жизнь
-          </p>
-          <img src="#" width="520" height="260" alt="Картинка городка Седона на фоне гор.">
+          <div class="advantages-list__item-wrapper">
+            <h3 class="advantages-list__title">Настоящий городок</h3>
+            <span class="advantages-list__numeration">№1</span>
+            <p class="advantages-list__description">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
+            </p>
+          </div>
+          <img src="img/real-town-image.jpg" width="320" height="260" alt="Картинка городка Седона на фоне гор.">
         </li>
         <li class="advantages-list__item-additional-list">
-          <ul class="additional-advantages-list">
+          <ul class="additional-advantages-list reset-list">
             <li class="additional-advantages-list__item">
               <h3 class="advantages-list__title additional-advantages-list__title">Жильё</h3>
               <p class="advantages-list__description additional-advantages-list__description">
@@ -88,30 +91,32 @@
           </ul>
         </li>
         <li class="advantages-list__item">
-          <h3 class="advantages-list__title">Там есть мост дьявола</h3>
-          <span class="advantages-list__numeration">— №2 —</span>
-          <p class="advantages-list__description">
-            Да, по нему можно пройти! Если вы осмелитесь, конечно
-          </p>
-          <img src="#" width="520" height="260" alt="Мост дьявола.">
+          <div class="advantages-list__item-wrapper advantages-list__item-wrapper--second">
+            <h3 class="advantages-list__title">Там есть мост дьявола</h3>
+            <span class="advantages-list__numeration">№2</span>
+            <p class="advantages-list__description">
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
+            </p>
+          </div>
+          <img src="img/devil-bridge-image.jpg" width="320" height="260" alt="Мост дьявола.">
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages-list__item advantages-list__item--extended">
           <h3 class="advantages-list__title">Небольшая площадь</h3>
-          <span class="advantages-list__numeration">— №3 —</span>
+          <span class="advantages-list__numeration">№3</span>
           <p class="advantages-list__description">
             Все интересные места находятся очень близко
           </p>
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages-list__item advantages-list__item--extended">
           <h3 class="advantages-list__title">Красивая дорога</h3>
-          <span class="advantages-list__numeration">— №4 —</span>
+          <span class="advantages-list__numeration">№4</span>
           <p class="advantages-list__description">
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
-        <li class="advantages-list__item">
+        <li class="advantages-list__item advantages-list__item--extended">
           <h3 class="advantages-list__title">Мало туристов</h3>
-          <span class="advantages-list__numeration">— №5 —</span>
+          <span class="advantages-list__numeration">№5</span>
           <p class="advantages-list__description">
             Большинство едет в гранд каньон и толпится там
           </p>
@@ -136,29 +141,23 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__description">
-      <span class="footer__description-text">#VisitSedona</span>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list reset-list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
-        <p class="copyright__text">
-          Разработано
-        </p>
-      </a>
-    </div>
+    <span class="footer__description-text">#VisitSedona</span>
+    <ul class="footer__social-list social reset-list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
+      <p class="copyright__text">
+        Разработано
+      </p>
+    </a>
   </footer>
 
 </body>

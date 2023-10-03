@@ -1,0 +1,14 @@
+@import "common/variables.scss";
+
+.footer {
+  padding: 33px 82px;
+}
+
+.footer__description-text {
+  text-align: center;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

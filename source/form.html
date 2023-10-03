@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: Оставьте свой отзыв</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,7 +43,7 @@
   </header>
 
   <main class="page__main">
-    <section class="page__hero">
+    <section class="page__hero hero">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
       <img class="greeting-img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
     </section>
@@ -55,13 +56,21 @@
         </p>
       </div>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
-        <h2>Представьтесь:</h2>
-        <label class="review-form__label" for="user-name">Имя:*</label>
-          <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
-        <label class="review-form__label" for="user-surname">Фамилия*:</label>
-          <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
-        <label class="review-form__label" for="user-patronymic">Отчество:</label>
-          <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+        <h2 class="review-form__title">Представьтесь:</h2>
+        <ul class="review-form__introduce-list reset-list">
+          <li class="review-form__introduce-item">
+            <label class="review-form__label" for="user-name">Имя:*</label>
+            <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
+          </li>
+          <li class="review-form__introduce-item">
+            <label class="review-form__label" for="user-surname">Фамилия*:</label>
+            <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
+          </li>
+          <li class="review-form__introduce-item">
+            <label class="review-form__label" for="user-patronymic">Отчество:</label>
+            <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+          </li>
+        </ul>
 
         <section class="review-form__contact-info">
           <h2 class="review-form__contact-info-title">Контактная информация:</h2>
@@ -138,43 +147,34 @@
 
         <section class="review-form__describe-emotions">
           <h2 class="review-form__describe-emotions-title">Опишите свои эмоции:</h2>
-          <div class="review-form__describe-emotions-container container">
-            <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги."></textarea>
-          </div>
+          <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги."></textarea>
+          <button class="button review-form__send-review-button" type="submit">
+            Отправить отзыв
+          </button>
+          <span class="review-form__text-required-fields">* — Обязательные поля</span>
         </section>
-
-        <button class="button review-form__send-review-button" type="submit">
-          Отправить отзыв
-        </button>
-        <span class="review-form__text-required-fields">* — Обязательные поля</span>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__description">
-      <span class="footer__description-text">#VisitSedona</span>
-    </div>
-    <div class="footer__social social">
-      <ul class="social__list reset-list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
-        <p class="copyright__text">
-          Разработано
-        </p>
-      </a>
-    </div>
+    <span class="footer__description-text">#VisitSedona</span>
+    <ul class="footer__social-list social reset-list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в вконтакте." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Мы в ютубе." target="_blank"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#" aria-label="Мы в телеграме." target="_blank"></a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Академии.">
+      <p class="copyright__text">
+        Разработано
+      </p>
+    </a>
   </footer>
 </body>
 </html>
