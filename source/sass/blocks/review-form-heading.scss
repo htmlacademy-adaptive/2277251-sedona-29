@@ -12,6 +12,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .review-form-heading__text {

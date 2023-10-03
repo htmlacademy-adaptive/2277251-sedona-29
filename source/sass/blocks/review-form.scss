@@ -12,6 +12,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__introduce-list {
@@ -44,6 +48,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__field-phone::placeholder {
@@ -76,6 +84,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__describe-emotions {
@@ -90,6 +102,10 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__send-review-button {
@@ -109,4 +125,8 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 }
