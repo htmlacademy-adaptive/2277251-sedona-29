@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .advantages-list__item-wrapper {
   padding: 54px 18px 40px 18px;
 
@@ -9,7 +11,7 @@
 .advantages-list__item {
   display: flex;
   flex-direction: column;
-  background-color: #81b3d2;
+  background-color: $main-color;
 
   &--extended {
     background-color: #eeeeee;
@@ -69,15 +71,15 @@
 }
 
 .advantages-list__item--extended .advantages-list__title {
-  color: #000000;
+  color: $secondary-color;
 }
 
 .advantages-list__item--extended .advantages-list__numeration,
 .advantages-list__item--extended .advantages-list__description {
-  color: #333333;
+  color: $additional-color;
 }
 
 .advantages-list__item--extended .advantages-list__numeration::before,
 .advantages-list__item--extended .advantages-list__numeration::after {
-  background-color: #333333;
+  background-color: $additional-color;
 }

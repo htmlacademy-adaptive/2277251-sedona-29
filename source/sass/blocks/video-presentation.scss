@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .video-presentation {
   padding: 17px 20px 36px 20px;
 }
@@ -8,7 +10,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .video-presentation__text {
@@ -17,5 +19,5 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: $additional-color;
 }

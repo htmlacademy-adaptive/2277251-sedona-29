@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .additional-advantages-list {
   display: flex;
   flex-direction: column;
@@ -11,7 +13,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .additional-advantages-list__description {

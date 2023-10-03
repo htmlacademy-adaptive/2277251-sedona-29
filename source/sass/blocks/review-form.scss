@@ -1,10 +1,12 @@
+@import "common/variables.scss";
+
 .review-form {
   padding: 24px 20px 22px 20px;
 }
 
 .review-form__title {
   margin: 0;
-  color: #000000;
+  color: $secondary-color;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -21,7 +23,7 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: $additional-color;
 }
 
 .review-form__field {
@@ -41,7 +43,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .review-form__field-phone::placeholder {
@@ -73,7 +75,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .review-form__describe-emotions {
@@ -82,7 +84,7 @@
 
 .review-form__describe-emotions-title {
   margin: 0;
-  color: #000000;
+  color: $secondary-color;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -96,7 +98,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: #81b3d2;
+  background-color: $main-color;
   color: #ffffff;
 }
 

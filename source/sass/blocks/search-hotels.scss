@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .search-hotels {
   padding: 38px 18px 32px 18px;
 }
@@ -8,7 +10,7 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .search-hotels__text {
@@ -16,7 +18,7 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: $additional-color;
   text-align: center;
 }
 
@@ -27,6 +29,6 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #81b3d2;
+  background-color: $main-color;
   text-decoration: none;
 }

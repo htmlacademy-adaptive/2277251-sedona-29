@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .catalog {
   padding: 30px 20px 0 20px;
 }
@@ -9,7 +11,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .catalog__text {
@@ -18,7 +20,7 @@
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: $additional-color;
 }
 
 .catalog__item {
@@ -30,11 +32,11 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }
 
 .catalog__author {
   font-weight: 400;
   line-height: 21px;
-  color: #333333;
+  color: $additional-color;
 }

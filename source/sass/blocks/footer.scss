@@ -1,3 +1,5 @@
+@import "common/variables.scss";
+
 .footer {
   padding: 33px 82px;
 }
@@ -8,5 +10,5 @@
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: $secondary-color;
 }

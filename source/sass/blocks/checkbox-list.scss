@@ -1,6 +1,8 @@
+@import "common/variables.scss";
+
 .checkbox-list__text {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  color: #000000;
+  color: $secondary-color;
 }
