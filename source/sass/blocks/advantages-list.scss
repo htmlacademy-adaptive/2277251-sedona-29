@@ -36,6 +36,9 @@
 .advantages-list__numeration {
   position: relative;
   display: block;
+  min-width: 46px;
+  max-width: 46px;
+  margin: 0 auto;
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -49,7 +52,7 @@
     width: 8px;
     height: 1px;
     top: 10px;
-    left: 119px;
+    left: 0;
     background-color: #ffffff;
   }
 
@@ -59,7 +62,7 @@
     width: 8px;
     height: 1px;
     top: 10px;
-    right: 119px;
+    right: 0;
     background-color: #ffffff;
   }
 }
