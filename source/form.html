@@ -56,24 +56,26 @@
         </p>
       </div>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
-        <h2 class="review-form__title">Представьтесь:</h2>
-        <ul class="review-form__introduce-list reset-list">
-          <li class="review-form__introduce-item">
-            <label class="review-form__label" for="user-name">Имя:*</label>
-            <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
-          </li>
-          <li class="review-form__introduce-item">
-            <label class="review-form__label" for="user-surname">Фамилия*:</label>
-            <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
-          </li>
-          <li class="review-form__introduce-item">
-            <label class="review-form__label" for="user-patronymic">Отчество:</label>
-            <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
-          </li>
-        </ul>
+        <fieldset class="review-form__introduce">
+          <legend class="review-form__title">Представьтесь:</legend>
+          <ul class="review-form__introduce-list reset-list">
+            <li class="review-form__introduce-item">
+              <label class="review-form__label" for="user-name">Имя:*</label>
+              <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
+            </li>
+            <li class="review-form__introduce-item">
+              <label class="review-form__label" for="user-surname">Фамилия*:</label>
+              <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
+            </li>
+            <li class="review-form__introduce-item">
+              <label class="review-form__label" for="user-patronymic">Отчество:</label>
+              <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+            </li>
+          </ul>
+        </fieldset>
 
-        <section class="review-form__contact-info">
-          <h2 class="review-form__contact-info-title">Контактная информация:</h2>
+        <fieldset class="review-form__contact-info">
+          <legend class="review-form__contact-info-title">Контактная информация:</legend>
           <div class="review-form__label-icon-wrapper">
             <label class="review-form__label" for="user-number">Контактный телефон*:</label>
               <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
@@ -82,10 +84,10 @@
             <label class="review-form__label" for="user-email">Электронная почта*:</label>
               <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" aria-label="Ваш email." required>
           </div>
-        </section>
+        </fieldset>
 
-        <section class="review-form__list-wrapper">
-          <h2 class="review-form__list-wrapper-title">Ваше общее впечатление:</h2>
+        <fieldset class="review-form__list-wrapper">
+          <legend class="review-form__list-wrapper-title">Ваше общее впечатление:</legend>
           <ul class="review-form__list radio-list reset-list">
             <li class="radio-list__item">
               <label class="radio-list__control control">
@@ -109,10 +111,10 @@
               </label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <section class="review-form__list-wrapper">
-          <h2 class="review-form__list-wrapper-title">Посещенные достопримечательности:</h2>
+        <fieldset class="review-form__list-wrapper">
+          <legend class="review-form__list-wrapper-title">Посещенные достопримечательности:</legend>
           <ul class="review-form__list checkbox-list reset-list">
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
@@ -143,16 +145,16 @@
               </label>
             </li>
           </ul>
-        </section>
+        </fieldset>
 
-        <section class="review-form__describe-emotions">
-          <h2 class="review-form__describe-emotions-title">Опишите свои эмоции:</h2>
+        <fieldset class="review-form__describe-emotions">
+          <legend class="review-form__describe-emotions-title">Опишите свои эмоции:</legend>
           <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги."></textarea>
           <button class="button review-form__send-review-button" type="submit">
             Отправить отзыв
           </button>
           <span class="review-form__text-required-fields">* — Обязательные поля</span>
-        </section>
+        </fieldset>
       </form>
     </section>
   </main>
