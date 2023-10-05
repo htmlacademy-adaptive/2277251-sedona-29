@@ -18,11 +18,3 @@ navToggle.addEventListener('click', function () {
     navListWrapper.style.display = "none";
   }
 });
-
-/* let navNoJs = document.querySelector('.nav--no-js');
-let mainNavList = document.querySelector('.nav__list');
-
-if (nav.classList.contains('nav--no-js')) {
-  navListWrapper.style.display = "block";
-  navToggle.style.display = "none";
-} */
