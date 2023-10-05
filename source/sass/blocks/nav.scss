@@ -1,4 +1,77 @@
 // Начните писать стили здесь
 .nav {
+  z-index: 1;
+}
+
+.nav--opened.nav {
+  width: 100%;
+}
+
+.nav__toggle {
+  cursor: pointer;
+  border: none;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__toggle--no-js.nav__toggle {
+  display: none;
+}
+
+.nav--opened .nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 1;
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  background-image: url("../img/icon-burger-opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: $main-color;
+  z-index: 1;
+  text-align: center;
+}
+
+.nav--opened .nav__list-wrapper {
+  @media (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.nav--no-js.main-nav {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: initial;
+    margin: initial;
+  }
+}
+
+.nav--no-js .nav__list-wrapper {
+  position: static;
 }
