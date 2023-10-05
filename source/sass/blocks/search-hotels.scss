@@ -5,6 +5,7 @@
 }
 
 .search-hotels__title {
+  margin: 0 0 24px 0;
   text-align: center;
   font-size: 21px;
   font-weight: 700;
@@ -18,12 +19,18 @@
 }
 
 .search-hotels__text {
+  margin: 0 0 32px 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
   color: $additional-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 44px auto;
+    max-width: 435px;
+  }
 }
 
 .search-hotels__button {
@@ -37,4 +44,9 @@
   color: #ffffff;
   background-color: $main-color;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
+    margin: 0 auto;
+  }
 }
