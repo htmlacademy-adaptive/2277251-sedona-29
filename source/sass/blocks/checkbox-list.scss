@@ -1,5 +1,9 @@
 @import "common/variables.scss";
 
+.checkbox-list__item {
+  padding: 0 0 0 62px;
+}
+
 .checkbox-list__text {
   display: block;
   padding: 10px 0;

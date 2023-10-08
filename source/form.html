@@ -47,7 +47,7 @@
   <main class="page__main">
     <section class="page__hero hero">
       <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-      <img class="greeting-img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
+      <img class="hero__img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
     </section>
 
     <section class="page__review-form">
@@ -58,39 +58,41 @@
         </p>
       </div>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="review-form__introduce">
-          <legend class="review-form__title">Представьтесь:</legend>
-          <ul class="review-form__introduce-list reset-list">
-            <li class="review-form__introduce-item">
-              <label class="review-form__label" for="user-name">Имя:*</label>
-              <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
-            </li>
-            <li class="review-form__introduce-item">
-              <label class="review-form__label" for="user-surname">Фамилия*:</label>
-              <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
-            </li>
-            <li class="review-form__introduce-item">
-              <label class="review-form__label" for="user-patronymic">Отчество:</label>
-              <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
-            </li>
-          </ul>
-        </fieldset>
+        <div class="review-form__contact-wrapper">
+          <fieldset class="review-form__introduce">
+            <legend class="review-form__title">Представьтесь:</legend>
+            <ul class="review-form__introduce-list reset-list">
+              <li class="review-form__introduce-item">
+                <label class="review-form__label" for="user-name">Имя:*</label>
+                <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
+              </li>
+              <li class="review-form__introduce-item">
+                <label class="review-form__label" for="user-surname">Фамилия*:</label>
+                <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
+              </li>
+              <li class="review-form__introduce-item">
+                <label class="review-form__label" for="user-patronymic">Отчество:</label>
+                <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset class="review-form__contact-info">
-          <legend class="review-form__contact-info-title">Контактная информация:</legend>
-          <div class="review-form__label-icon-wrapper">
-            <label class="review-form__label" for="user-number">Контактный телефон*:</label>
-              <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
-          </div>
-          <div class="review-form__label-icon-wrapper">
-            <label class="review-form__label" for="user-email">Электронная почта*:</label>
-              <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" aria-label="Ваш email." required>
-          </div>
-        </fieldset>
+          <fieldset class="review-form__contact-info">
+            <legend class="review-form__contact-info-title">Контактная информация:</legend>
+            <div class="review-form__label-icon-wrapper">
+              <label class="review-form__label" for="user-number">Контактный телефон*:</label>
+                <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
+            </div>
+            <div class="review-form__label-icon-wrapper">
+              <label class="review-form__label" for="user-email">Электронная почта*:</label>
+                <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" aria-label="Ваш email." required>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="review-form__list-wrapper">
           <legend class="review-form__list-wrapper-title">Ваше общее впечатление:</legend>
-          <ul class="review-form__list radio-list reset-list">
+          <ul class="review-form__radio-list radio-list reset-list">
             <li class="radio-list__item">
               <label class="radio-list__control control">
                 <input class="radio-list__field field visually-hidden" type="radio" name="impression" value="rather-positive" required checked>
@@ -115,9 +117,9 @@
           </ul>
         </fieldset>
 
-        <fieldset class="review-form__list-wrapper">
+        <fieldset class="review-form__list-wrapper review-form__list-wrapper--attractions">
           <legend class="review-form__list-wrapper-title">Посещенные достопримечательности:</legend>
-          <ul class="review-form__list checkbox-list reset-list">
+          <ul class="review-form__checkbox-list checkbox-list reset-list">
             <li class="checkbox-list__item">
               <label class="checkbox-list__control control">
                 <input class="checkbox-list__field field visually-hidden" type="checkbox" name="attractions-visited" value="devil-bridge" checked>

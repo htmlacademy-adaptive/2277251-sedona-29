@@ -2,6 +2,14 @@
 
 .review-form-heading {
   padding: 36px 20px 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 166px 108px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 382px 68px 382px;
+  }
 }
 
 .review-form-heading__title {
@@ -15,6 +23,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 31px 0;
   }
 }
 
