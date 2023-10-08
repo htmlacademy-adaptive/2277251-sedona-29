@@ -44,3 +44,19 @@
   line-height: 21px;
   color: $additional-color;
 }
+
+.catalog__likes-quantity {
+  border: none;
+  background-color: transparent;
+  color: $secondary-color;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 0 0 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 32px;
+  }
+}
