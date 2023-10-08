@@ -20,6 +20,14 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nav__toggle--no-js.nav__toggle {

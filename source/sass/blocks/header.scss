@@ -16,4 +16,12 @@
   @media (min-width: $tablet-width) {
     z-index: 2;
   }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
 }
