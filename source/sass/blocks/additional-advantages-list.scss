@@ -52,6 +52,7 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $additional-color;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     text-align: center;
