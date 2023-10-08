@@ -1,3 +1,7 @@
+.site-list__item:nth-child(3) {
+  grid-column: 4;
+}
+
 .site-list__link {
   display: block;
   padding: 17px 81px 12px 81px;
@@ -9,4 +13,15 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 17px 0 12px 0;
+    color: #000000;
+  }
+
+  &--current {
+    color: #766357;
+  }
 }

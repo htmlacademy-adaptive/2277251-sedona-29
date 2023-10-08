@@ -51,6 +51,12 @@
   background-color: $main-color;
   z-index: 1;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 185px 1fr 1fr;
+    background-color: initial;
+  }
 }
 
 .nav--opened .nav__list-wrapper {
