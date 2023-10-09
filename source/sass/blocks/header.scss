@@ -1,7 +1,5 @@
 .header__wrapper {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @include flex(row, flex-end, center);
   flex-wrap: wrap;
   min-height: 56px;
 }
