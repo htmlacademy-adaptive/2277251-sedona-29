@@ -35,8 +35,7 @@
 }
 
 .advantages-list__item {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   width: 100%;
   background-color: $main-color;
 

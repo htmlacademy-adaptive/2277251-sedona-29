@@ -48,8 +48,7 @@
 }
 
 .review-form__introduce-list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   gap: 16px;
 }
 
@@ -175,8 +174,7 @@
 }
 
 .review-form__radio-list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   flex-wrap: wrap;
   gap: 16px;
 
@@ -193,8 +191,7 @@
 }
 
 .review-form__checkbox-list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   flex-wrap: wrap;
   gap: 16px;
 

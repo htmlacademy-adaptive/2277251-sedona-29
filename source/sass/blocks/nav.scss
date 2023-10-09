@@ -53,8 +53,7 @@
 }
 
 .nav__list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   flex-wrap: wrap;
   background-color: $main-color;
   z-index: 1;

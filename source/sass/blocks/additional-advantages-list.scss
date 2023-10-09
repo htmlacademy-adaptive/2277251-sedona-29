@@ -1,8 +1,7 @@
 @import "common/variables.scss";
 
 .additional-advantages-list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   gap: 25px;
   padding: 31px 18px 46px 65px;
   background-color: #ffffff;
@@ -17,10 +16,8 @@
 
 .additional-advantages-list__item {
   @media (min-width: $tablet-width) {
+    @include flex(column, flex-end);
     min-height: 331px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
     padding: 60px 33px;
   }
 
