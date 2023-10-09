@@ -1,6 +1,12 @@
 @import "common/variables.scss";
 
+.radio-list__item {
+  padding: 0 0 0 62px;
+}
+
 .radio-list__text {
+  display: block;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;

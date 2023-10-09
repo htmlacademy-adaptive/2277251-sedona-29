@@ -1,1 +1,25 @@
-// Временный комментарий
+.header__wrapper {
+  @include flex(row, flex-end, center);
+  flex-wrap: wrap;
+  min-height: 56px;
+}
+
+.header__logo-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}

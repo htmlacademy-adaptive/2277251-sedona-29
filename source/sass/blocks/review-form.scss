@@ -2,10 +2,38 @@
 
 .review-form {
   padding: 24px 20px 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 64px 60px;
+  }
+}
+
+.review-form__contact-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 57px;
+    margin: 0 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 99px;
+    margin: 0 0 71px 0;
+  }
+}
+
+.review-form__introduce {
+  margin: 0 0 39px 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .review-form__title {
-  margin: 0;
+  margin: 0 0 20px 0;
   color: $secondary-color;
   text-align: center;
   font-size: 18px;
@@ -14,15 +42,22 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 28px 0;
     font-size: 21px;
   }
 }
 
 .review-form__introduce-list {
-  margin: 0 0 39px 0;
+  @include flex(column);
+  gap: 16px;
+}
+
+.review-form__label-icon-wrapper:not(:last-child) {
+  margin: 0 0 16px 0;
 }
 
 .review-form__label {
+  padding: 0 0 0 16px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -37,11 +72,18 @@
 }
 
 .review-form__contact-info {
-  padding: 24px 0 34px 0;
+  margin: 0 0 34px 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .review-form__contact-info-title {
-  margin: 0;
+  margin: 0 0 20px 0;
+  padding: 24px 0 0 0;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -50,8 +92,16 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 28px 0;
     font-size: 21px;
+    padding: 0;
   }
+}
+
+.review-form__field-phone {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .review-form__field-phone::placeholder {
@@ -61,6 +111,12 @@
   font-weight: 700;
   line-height: 26px;
   opacity: 1;
+}
+
+.review-form__field-email {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .review-form__field-email::placeholder {
@@ -73,11 +129,32 @@
 }
 
 .review-form__list-wrapper {
-  padding: 24px 0;
+  margin: 0 0 24px 0;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 48px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 56px 0;
+  }
+
+  &--attractions {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 42px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 56px 0;
+    }
+  }
 }
 
 .review-form__list-wrapper-title {
-  margin: 0;
+  margin: 0 0 20px 0;
+  padding: 24px 0 0 0;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -86,16 +163,62 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 28px 0;
+    padding: 0;
     font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 306px;
+  }
+}
+
+.review-form__radio-list {
+  @include flex(column);
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 576px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    gap: 28px;
+    max-width: none;
+  }
+}
+
+.review-form__checkbox-list {
+  @include flex(column);
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 480px;
+    gap: 16px 32px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    max-width: none;
+    gap: 64px;
+    padding: 31px;
   }
 }
 
 .review-form__describe-emotions {
-  padding: 24px 0 22px 0;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .review-form__describe-emotions-title {
-  margin: 0;
+  margin: 0 0 20px 0;
+  padding: 24px 0 0 0;
   color: $secondary-color;
   text-align: center;
   font-size: 18px;
@@ -104,23 +227,33 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 28px 0;
     font-size: 21px;
   }
 }
 
 .review-form__send-review-button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
   text-align: center;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  background-color: $main-color;
-  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    margin: 0;
+  }
 }
 
 .review-form__text-required-fields {
+  display: block;
   color: rgba(51, 51, 51, 0.6);
-  text-align: center;
+  text-align: right;
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
@@ -128,5 +261,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    margin-top: -40px;
   }
 }

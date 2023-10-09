@@ -1,21 +1,43 @@
 @import "common/variables.scss";
 
 .additional-advantages-list {
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   gap: 25px;
-  padding: 31px 18px 46px 18px;
+  padding: 31px 18px 46px 65px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
+}
+
+.additional-advantages-list__item {
+  @media (min-width: $tablet-width) {
+    @include flex(column, flex-end);
+    min-height: 331px;
+    padding: 60px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 50px;
+  }
 }
 
 .additional-advantages-list__title {
-  text-align: start;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  text-align: start;
+  margin: 0 0 16px 0;
   text-transform: uppercase;
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 34px 0;
+    text-align: center;
     font-size: 21px;
   }
 }
@@ -27,4 +49,13 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $additional-color;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 300px;
+  }
 }
