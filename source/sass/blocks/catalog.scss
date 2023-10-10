@@ -83,11 +83,11 @@
 
   @media (min-width: 600px) {
     background-color: #f2f2f2;
+    padding: 22px 20px 15px 20px;
   }
 
   @media (min-width: $tablet-width) {
     @include flex(row, space-between);
-    padding: 22px 20px 15px 20px;
   }
 }
 
@@ -112,6 +112,7 @@
 }
 
 .catalog__likes-quantity {
+  position: relative;
   border: none;
   background-color: transparent;
   color: $secondary-color;
@@ -123,6 +124,18 @@
   padding: 0 0 0 37px;
 
   @media (min-width: $tablet-width) {
+    align-self: center;
     padding: 0 0 0 32px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
   }
 }

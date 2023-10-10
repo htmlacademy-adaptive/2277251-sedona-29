@@ -1,5 +1,29 @@
 @import "common/variables.scss";
 
+.copyright {
+  @include flex(row, normal, center);
+  position: relative;
+  margin: 0 auto;
+  max-width: 129px;
+  min-height: 35px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 129px;
+    align-self: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 35px;
+    background-image: url("../img/icon-html-academy.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .copyright__link {
   font-size: 14px;
   font-weight: 400;
