@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(3, 48px);
   gap: 6px;
+  justify-content: center;
 }
 
 .social__link {
