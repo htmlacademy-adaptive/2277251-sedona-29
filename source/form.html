@@ -93,21 +93,21 @@
             <ul class="review-form__radio-list radio-list reset-list">
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field field visually-hidden" type="radio" name="impression" value="rather-positive" required checked>
+                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="rather-positive" required checked>
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Скорее положительное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field field visually-hidden" type="radio" name="impression" value="rather-negative">
+                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="rather-negative">
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field field visually-hidden" type="radio" name="impression" value="difficult-to-answer">
+                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="difficult-to-answer">
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Затрудняюсь ответить</span>
                 </label>
@@ -119,28 +119,28 @@
             <ul class="review-form__checkbox-list checkbox-list reset-list">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="attractions-visited" value="devil-bridge" checked>
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="devil-bridge" checked>
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Мост Дьявола</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain">
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park">
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Слайд-парк</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field field visually-hidden" type="checkbox" name="attractions-visited" value="red-rocks">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="red-rocks">
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Красные скалы</span>
                 </label>
@@ -175,6 +175,26 @@
         Разработано
       </a>
     </footer>
+    <div class="page__modal-container">
+      <div class="modal modal-failure">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
+        </p>
+        <button class="button modal__close-button" type="button">
+          Ок
+        </button>
+      </div>
+      <div class="modal modal-success">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text modal__text--success">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <button class="button modal__close-button" type="button">
+          Закрыть окно
+        </button>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </div>
 </body>
