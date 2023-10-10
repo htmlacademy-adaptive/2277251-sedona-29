@@ -3,7 +3,7 @@
 .additional-advantages-list {
   @include flex(column);
   gap: 25px;
-  padding: 31px 18px 46px 65px;
+  padding: 23px 18px 46px 18px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
@@ -15,6 +15,9 @@
 }
 
 .additional-advantages-list__item {
+  position: relative;
+  padding: 0 0 0 47px;
+
   @media (min-width: $tablet-width) {
     @include flex(column, flex-end);
     min-height: 331px;
@@ -24,9 +27,64 @@
   @media (min-width: $desktop-width) {
     padding: 69px 50px;
   }
+
+  &--house {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 60px;
+        left: 89px;
+      }
+    }
+  }
+
+  &--food {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icon-food-burger.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 62px;
+        left: 87px;
+      }
+    }
+  }
+
+  &--souvenir {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background-image: url("../img/icon-souvenir.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 64px;
+        left: 99px;
+      }
+    }
+  }
 }
 
 .additional-advantages-list__title {
+  padding: 8px 0 0 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -37,6 +95,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 34px 0;
+    padding: 0;
     text-align: center;
     font-size: 21px;
   }
