@@ -1,6 +1,6 @@
 @import "common/variables.scss";
 
-.additional-advantages-list {
+.inner-advantages-list {
   @include flex(column);
   gap: 25px;
   padding: 23px 18px 46px 18px;
@@ -14,7 +14,7 @@
   }
 }
 
-.additional-advantages-list__item {
+.inner-advantages-list__item {
   position: relative;
   padding: 0 0 0 47px;
 
@@ -83,7 +83,7 @@
   }
 }
 
-.additional-advantages-list__title {
+.inner-list__title {
   padding: 8px 0 0 0;
   font-size: 18px;
   font-weight: 700;
@@ -101,7 +101,7 @@
   }
 }
 
-.additional-advantages-list__description {
+.inner-advantages-list__description {
   text-align: start;
   font-size: 14px;
   font-weight: 400;
