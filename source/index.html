@@ -47,7 +47,10 @@
     <main class="page__main">
       <section class="page__hero hero">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-        <img class="hero__img" src="img/sedona-greeting.svg" width="282" height="214" alt="Добро пожаловать в великолепную седону. Потому что Гранд-Каньон - отстой.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/sedona-greeting-tablet.svg 1x, img/sedona-greeting-tablet@2x.svg 2x" width="461" height="350">
+          <img class="hero__img" src="img/sedona-greeting.svg" srcset="img/sedona-greeting@2x.svg 2x" width="282" height="214" alt="Добро пожаловать в великолепную седону. Потому что Гранд-Каньон - отстой.">
+        </picture>
       </section>
       <section class="page__sedona-description sedona-description">
         <h2 class="sedona-description__title">Седона — небольшой городок&nbsp;в Аризоне, заслуживающий&nbsp;большего!</h2>
@@ -66,7 +69,11 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </p>
             </div>
-            <img src="img/real-town-image.jpg" width="320" height="260" alt="Картинка городка Седона на фоне гор.">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/real-town-image-desktop.jpg 1x, img/real-town-image-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 520px)" srcset="img/real-town-image-tablet.jpg 1x, img/real-town-image-tablet@2x.jpg 2x" width="512" height="256">
+              <img src="img/real-town-image.jpg" srcset="img/real-town-image@2x.jpg 2x" width="320" height="260" alt="Картинка городка Седона на фоне гор.">
+            </picture>
           </li>
           <li class="advantages-list__item-inner-list">
             <ul class="inner-advantages-list reset-list">
@@ -98,7 +105,11 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <img src="img/devil-bridge-image.jpg" width="320" height="260" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/devil-bridge-image-desktop.jpg 1x, img/devil-bridge-image-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 520px)" srcset="img/devil-bridge-image-tablet.jpg 1x, img/devil-bridge-image-tablet@2x.jpg 2x" width="512" height="256">
+              <img src="img/devil-bridge-image.jpg" srcset="img/devil-bridge-image@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="advantages-list__item advantages-list__item--extended">
             <h3 class="advantages-list__title">Небольшая площадь</h3>
@@ -135,6 +146,12 @@
       </section>
       <section class="page__map map">
         <h2 class="visually-hidden">Мы на карте.</h2>
+        <div class="map__wrapper map__wrapper--no-js" id="map"></div>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/map-location-desktop.jpg 1x, img/map-location-desktop@2x.jpg 2x" width="1200" height="350">
+          <source media="(min-width: 768px)" srcset="img/map-location-tablet.jpg 1x, img/map-location-tablet@2x.jpg 2x" width="768" height="350">
+          <img class="map__image map__image--no-js" src="img/map-location.jpg" srcset="img/map-location@2x.jpg 2x" width="320" height="350" alt="Мы на карте.">
+        </picture>
       </section>
     </main>
     <footer class="footer">
