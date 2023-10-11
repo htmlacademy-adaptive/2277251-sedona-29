@@ -35,13 +35,13 @@
 }
 
 .advantages-list__item {
-  @include flex(column);
+  @include flex(column, normal, center);
   width: 100%;
   background-color: $main-color;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 33.3% 1fr;
+    grid-template-columns: 33.33% 1fr;
     width: 100%;
   }
 
@@ -70,7 +70,7 @@
   &--second {
     @media (min-width: $tablet-width) {
       display: grid;
-      grid-template-columns: 1fr 33.3%;
+      grid-template-columns: 1fr 33.33%;
     }
 
     @media (min-width: $desktop-width) {
