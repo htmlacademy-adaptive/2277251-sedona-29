@@ -1,8 +1,9 @@
 .hero {
   background-color: rgba(131, 179, 211, 0.5);
-  background-image: url("../img/hero-brackground.jpg");
+  background-image: url("../img/hero-divider.svg"), url("../img/hero-brackground.jpg");
+  background-size: auto, 100% auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   padding: 90px 19px 85px 19px;
 }
 
