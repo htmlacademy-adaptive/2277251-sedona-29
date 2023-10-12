@@ -49,6 +49,20 @@
 }
 
 .video-presentation__link {
+  position: relative;
   display: block;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
