@@ -22,6 +22,33 @@
 
 .catalog__list {
   @include flex (column, normal, center);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    top: 0;
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: 0;
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
 
   @media (min-width: 600px) {
     display: grid;
@@ -57,9 +84,27 @@
 }
 
 .catalog__item {
+  position: relative;
   padding: 24px 0 25px 0;
 
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
+
   @media (min-width: 600px) {
+    padding: 0;
+
     &:first-child {
       grid-column: 1 / -1;
     }
@@ -74,7 +119,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    position: static;
   }
 }
 
