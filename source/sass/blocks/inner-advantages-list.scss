@@ -38,10 +38,14 @@
       height: 40px;
       background-image: url("../img/icon-house.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 77px;
+        height: 72px;
         top: 60px;
-        left: 89px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -56,10 +60,14 @@
       height: 40px;
       background-image: url("../img/icon-food-burger.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 68px;
         top: 62px;
-        left: 87px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -74,10 +82,14 @@
       height: 40px;
       background-image: url("../img/icon-souvenir.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 67px;
+        height: 75px;
         top: 64px;
-        left: 99px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
