@@ -164,6 +164,8 @@
 
 .advantages-list__image {
   display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 .advantages-list__item--extended .advantages-list__title {
