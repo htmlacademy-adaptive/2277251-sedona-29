@@ -1,5 +1,3 @@
-@import "common/variables.scss";
-
 .inner-advantages-list {
   @include flex(column);
   gap: 25px;
