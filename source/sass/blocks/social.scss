@@ -22,7 +22,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("../img/icon-vk.svg");
+      mask-image: url("../img/icon-vk.svg");
+      background-color: #ffffff;
       background-repeat: no-repeat;
     }
   }
@@ -36,7 +37,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("../img/icon-telegram.svg");
+      mask-image: url("../img/icon-telegram.svg");
+      background-color: #ffffff;
       background-repeat: no-repeat;
     }
   }
@@ -50,7 +52,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-image: url("../img/icon-youtube.svg");
+      mask-image: url("../img/icon-youtube.svg");
+      background-color: #ffffff;
       background-repeat: no-repeat;
     }
   }
@@ -61,5 +64,9 @@
 
   &:active {
     background-color: #5496bd;
+
+    &::before {
+      opacity: 0.3;
+    }
   }
 }
