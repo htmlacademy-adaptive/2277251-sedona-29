@@ -197,15 +197,6 @@
   text-transform: uppercase;
   padding: 5px 0 0 37px;
 
-  @media (min-width: $tablet-width) {
-    align-self: center;
-    padding: 5px 0 0 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -213,8 +204,24 @@
     left: 0;
     width: 23px;
     height: 21px;
-    background-image: url("../img/icon-like.svg");
+    mask-image: url("../img/icon-like.svg");
+    background-color: $secondary-color;
+    opacity: 0.3;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding: 5px 0 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+      opacity: 1;
+    }
   }
 
   &:hover {
