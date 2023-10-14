@@ -22,8 +22,6 @@
   height: 46px;
   top: 0;
   left: 0;
-  background-color: #f2f2f2;
-  border-radius: 50%;
 }
 
 .radio-list__field:checked + .radio-list__control-outline::after {
@@ -37,16 +35,8 @@
   background-color: $additional-color;
 }
 
-.radio-list__field:hover + .radio-list__control-outline::before {
-  background-color: #e5e5e5;
-}
-
-.radio-list__field:active + .radio-list__control-outline::before {
-  background-color: #d5d5d5;
-}
-
 .radio-list__field:active + .radio-list__control-outline::after {
-  opacity: 0.3;
+  background-color: #a5a5a5;
 }
 
 .radio-list__field:disabled ~ .radio-list__text,
@@ -56,5 +46,8 @@
 
 .radio-list__field:focus-visible + .radio-list__control-outline {
   outline: 2px solid #000000;
-  outline-offset: 2px;
+}
+
+.radio-list__field + .radio-list__control-outline {
+  border-radius: 50%;
 }
