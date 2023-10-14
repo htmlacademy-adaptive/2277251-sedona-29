@@ -1,4 +1,5 @@
 .video-presentation {
+  @include flex(column);
   padding: 17px 20px 36px 20px;
 
   @media (min-width: $tablet-width) {
@@ -48,8 +49,7 @@
 
 .video-presentation__link {
   position: relative;
-  display: block;
-  text-align: center;
+  align-self: center;
 
   &::before {
     content: "";
@@ -59,8 +59,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../img/icon-play.svg");
+    mask-image: url("../img/icon-play.svg");
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $main-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.8;
+    }
   }
 }
