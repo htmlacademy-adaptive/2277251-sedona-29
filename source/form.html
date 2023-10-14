@@ -64,15 +64,15 @@
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-name">Имя:*</label>
                   <!-- Для показа состояния ошибки инпута добавить класс field--error -->
-                  <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
+                  <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя" value="Пётр" required>
                 </li>
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-surname">Фамилия*:</label>
-                  <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
+                  <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" placeholder="Введите вашу фамилию" value="Пустота" required>
                 </li>
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-patronymic">Отчество:</label>
-                  <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+                  <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" placeholder="Введите ваше отчество" value="Викторович">
                 </li>
               </ul>
             </fieldset>
@@ -80,11 +80,11 @@
               <legend class="review-form__contact-info-title">Контактная информация:</legend>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-number">Контактный телефон*:</label>
-                <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон." required>
+                <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
               </div>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-email">Электронная почта*:</label>
-                <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email." required>
+                <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
               </div>
             </fieldset>
           </div>
@@ -126,14 +126,14 @@
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain" checked>
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park" checked>
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Слайд-парк</span>
                 </label>
@@ -149,7 +149,7 @@
           </fieldset>
           <fieldset class="review-form__describe-emotions review-form__list-wrapper">
             <legend class="review-form__describe-emotions-title review-form__list-wrapper-title">Опишите свои эмоции:</legend>
-            <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги."></textarea>
+            <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
             <button class="button review-form__send-review-button" type="submit">
               Отправить отзыв
             </button>
