@@ -24,7 +24,7 @@ let mapWrapper = document.querySelector('.map__wrapper');
 let mapImage = document.querySelector('.map__image');
 let center = [34.866849964021355,-111.76106949186402];
 let pinSize = [27, 27];
-let pinOffset = [-10, -5];
+let pinOffset = [-10, -20];
 let zoom = 7;
 
 mapWrapper.classList.remove('map__wrapper--no-js');
