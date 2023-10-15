@@ -20,4 +20,13 @@
     outline: 4px solid #e80a0a;
     outline-offset: -4px;
   }
+
+  &::placeholder {
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    opacity: 1;
+  }
 }
