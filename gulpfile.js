@@ -2,7 +2,6 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
-import stacksvg from 'gulp-stacksvg';
 import autoprefixer from 'autoprefixer';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
@@ -81,14 +80,6 @@ inlineSvg: true
 }))
 .pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
-}
-
-const { src, dest } = gulp
-
-function makeStack () {
-	return src('source/img/*.svg')
-		.pipe(stacksvg({ output: 'sprite' }))
-		.pipe(gulp.dest(`build/img`))
 }
 
 // Copy
