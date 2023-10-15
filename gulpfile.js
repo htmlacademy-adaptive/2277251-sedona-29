@@ -83,6 +83,14 @@ inlineSvg: true
 .pipe(gulp.dest('build/img'));
 }
 
+const { src, dest } = gulp
+
+function makeStack () {
+	return src('source/img/*.svg')
+		.pipe(stacksvg({ output: 'sprite' }))
+		.pipe(gulp.dest(`build/img`))
+}
+
 // Copy
 
 const copy = (done) => {
