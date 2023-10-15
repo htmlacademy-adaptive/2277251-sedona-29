@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона: Оставьте свой отзыв</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon-152.png">
 </head>
-
 <body class="page__body">
   <div class="container">
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo-link" href="index.html">
-          <img src="img/logo.svg" width="185" height="96" alt="Логотип City of Sedona.">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип городка Седона.">
         </a>
-        <nav class="nav nav--opened nav--no-js">
-          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации"></button>
+        <nav class="nav nav--closed nav--no-js">
+          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации."></button>
           <div class="nav__list-wrapper">
             <ul class="nav__list site-list reset-list">
               <li class="site-list__item">
@@ -45,9 +45,9 @@
       </div>
     </header>
     <main class="page__main">
-      <section class="page__hero hero">
+      <section class="page__hero hero hero--additional">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-        <img class="hero__img" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
+        <img class="hero__img" src="img/sedona.svg" width="229" height="39" alt="Седона.">
       </section>
       <section class="page__review-form">
         <div class="review-form-heading">
@@ -56,7 +56,7 @@
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </div>
-        <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="review-form__contact-wrapper">
             <fieldset class="review-form__introduce">
               <legend class="review-form__title">Представьтесь:</legend>
@@ -64,15 +64,15 @@
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-name">Имя:*</label>
                   <!-- Для показа состояния ошибки инпута добавить класс field--error -->
-                  <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" value="Пётр" required>
+                  <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя" value="Пётр" required>
                 </li>
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-surname">Фамилия*:</label>
-                  <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" value="Пустота" required>
+                  <input class="review-form__field field field--surname" type="text" name="user-surname" id="user-surname" placeholder="Введите вашу фамилию" value="Пустота" required>
                 </li>
                 <li class="review-form__introduce-item">
                   <label class="review-form__label" for="user-patronymic">Отчество:</label>
-                  <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" value="Викторович">
+                  <input class="review-form__field field field--patronymic" type="text" name="user-patronymic" id="user-patronymic" placeholder="Введите ваше отчество" value="Викторович">
                 </li>
               </ul>
             </fieldset>
@@ -80,11 +80,11 @@
               <legend class="review-form__contact-info-title">Контактная информация:</legend>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-number">Контактный телефон*:</label>
-                  <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
+                <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
               </div>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-email">Электронная почта*:</label>
-                  <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail" aria-label="Ваш email." required>
+                <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
               </div>
             </fieldset>
           </div>
@@ -93,21 +93,21 @@
             <ul class="review-form__radio-list radio-list reset-list">
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="rather-positive" required checked>
+                  <input class="radio-list__field visually-hidden" type="radio" name="user-impression" value="rather-positive" checked>
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Скорее положительное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="rather-negative">
+                  <input class="radio-list__field visually-hidden" type="radio" name="user-impression" value="rather-negative">
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="radio-list__item">
                 <label class="radio-list__control control">
-                  <input class="radio-list__field visually-hidden" type="radio" name="impression" value="difficult-to-answer">
+                  <input class="radio-list__field visually-hidden" type="radio" name="user-impression" value="difficult-to-answer">
                   <span class="control__outline radio-list__control-outline"></span>
                   <span class="radio-list__text">Затрудняюсь ответить</span>
                 </label>
@@ -115,7 +115,7 @@
             </ul>
           </fieldset>
           <fieldset class="review-form__list-wrapper review-form__list-wrapper--attractions">
-            <legend class="review-form__list-wrapper-title">Посещенные достопримечательности:</legend>
+            <legend class="review-form__list-wrapper-title">Посещенные <br> достопримечательности:</legend>
             <ul class="review-form__checkbox-list checkbox-list reset-list">
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
@@ -126,14 +126,14 @@
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="bell-mountain" checked>
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox-list__item">
                 <label class="checkbox-list__control control">
-                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park">
+                  <input class="checkbox-list__field visually-hidden" type="checkbox" name="attractions-visited" value="slide-park" checked>
                   <span class="control__outline checkbox-list__control-outline"></span>
                   <span class="checkbox-list__text">Слайд-парк</span>
                 </label>
@@ -147,9 +147,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review-form__describe-emotions">
-            <legend class="review-form__describe-emotions-title">Опишите свои эмоции:</legend>
-            <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги."></textarea>
+          <fieldset class="review-form__describe-emotions review-form__list-wrapper">
+            <legend class="review-form__describe-emotions-title review-form__list-wrapper-title">Опишите свои эмоции:</legend>
+            <textarea class="field describe-emotions-field" name="user-emotions" cols="30" rows="7" placeholder="Опишите подробно все свои восторги"></textarea>
             <button class="button review-form__send-review-button" type="submit">
               Отправить отзыв
             </button>
@@ -195,7 +195,7 @@
         </button>
       </div>
     </div>
-    <script src="js/script.js"></script>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@
   @include flex(row, flex-end, center);
   flex-wrap: wrap;
   min-height: 56px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .header__logo-link {

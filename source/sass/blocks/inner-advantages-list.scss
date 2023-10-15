@@ -1,6 +1,4 @@
-@import "common/variables.scss";
-
-.additional-advantages-list {
+.inner-advantages-list {
   @include flex(column);
   gap: 25px;
   padding: 23px 18px 46px 18px;
@@ -14,7 +12,7 @@
   }
 }
 
-.additional-advantages-list__item {
+.inner-advantages-list__item {
   position: relative;
   padding: 0 0 0 47px;
 
@@ -38,10 +36,14 @@
       height: 40px;
       background-image: url("../img/icon-house.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 77px;
+        height: 72px;
         top: 60px;
-        left: 89px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -56,10 +58,14 @@
       height: 40px;
       background-image: url("../img/icon-food-burger.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 68px;
         top: 62px;
-        left: 87px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
@@ -74,16 +80,20 @@
       height: 40px;
       background-image: url("../img/icon-souvenir.svg");
       background-repeat: no-repeat;
+      background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 67px;
+        height: 75px;
         top: 64px;
-        left: 99px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }
 }
 
-.additional-advantages-list__title {
+.inner-advantages-list__title {
   padding: 8px 0 0 0;
   font-size: 18px;
   font-weight: 700;
@@ -101,7 +111,7 @@
   }
 }
 
-.additional-advantages-list__description {
+.inner-advantages-list__description {
   text-align: start;
   font-size: 14px;
   font-weight: 400;

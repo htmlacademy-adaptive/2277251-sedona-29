@@ -1,9 +1,54 @@
 .hero {
   background-color: rgba(131, 179, 211, 0.5);
-  background-image: url("../img/hero-brackground.jpg");
+  background-image: url("../img/hero-divider.svg"), url("../img/hero-background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: contain, cover;
+  background-position: bottom, center;
   padding: 90px 19px 85px 19px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-divider@2x.svg"), url("../img/hero-background@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-divider-tablet.svg"), url("../img/hero-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-divider-tablet@2x.svg"), url("../img/hero-background-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero-divider-desktop.svg"), url("../img/hero-background-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-divider-desktop@2x.svg"), url("../img/hero-background-desktop@2x.jpg");
+    }
+  }
+
+  &--additional {
+    background-image: url("../img/hero-divider.svg"), url("../img/hero-background-additional.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-divider@2x.svg"), url("../img/hero-background-additional@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero-divider-tablet.svg"), url("../img/hero-background-additional-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-divider-tablet@2x.svg"), url("../img/hero-background-additional-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/hero-divider-desktop.svg"), url("../img/hero-background-additional-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-divider-desktop@2x.svg"), url("../img/hero-background-additional-desktop@2x.jpg");
+      }
+    }
+  }
 }
 
 .hero__img {

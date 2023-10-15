@@ -1,6 +1,5 @@
-@import "common/variables.scss";
-
 .video-presentation {
+  @include flex(column);
   padding: 17px 20px 36px 20px;
 
   @media (min-width: $tablet-width) {
@@ -49,6 +48,32 @@
 }
 
 .video-presentation__link {
-  display: block;
-  text-align: center;
+  position: relative;
+  align-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../img/icon-play.svg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $main-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.8;
+    }
+  }
 }

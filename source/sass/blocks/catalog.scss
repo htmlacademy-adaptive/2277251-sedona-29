@@ -22,6 +22,33 @@
 
 .catalog__list {
   @include flex (column, normal, center);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    top: 0;
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: 0;
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
 
   @media (min-width: 600px) {
     display: grid;
@@ -57,25 +84,51 @@
 }
 
 .catalog__item {
+  position: relative;
   padding: 24px 0 25px 0;
 
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e5e5e5;
+
+    @media (min-width: 600px) {
+      content: none;
+    }
+  }
+
   @media (min-width: 600px) {
+    padding: 0;
+
     &:first-child {
       grid-column: 1 / -1;
     }
 
     &:nth-child(2n+3) .catalog__item-caption {
       background-color: #eaeaea;
+
+      @media (min-width: $desktop-width) {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    position: static;
   }
 }
 
 .catalog__item-wrapper {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .catalog__item-caption {
@@ -89,6 +142,18 @@
   @media (min-width: $tablet-width) {
     @include flex(row, space-between);
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.catalog__image {
+  display: block;
+  width: 100%;
 }
 
 .catalog__description {
@@ -102,6 +167,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__author {
@@ -109,11 +178,16 @@
   font-weight: 400;
   line-height: 21px;
   color: $additional-color;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .catalog__likes-quantity {
   position: relative;
   border: none;
+  cursor: pointer;
   background-color: transparent;
   color: $secondary-color;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -121,21 +195,43 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 0 0 0 37px;
-
-  @media (min-width: $tablet-width) {
-    align-self: center;
-    padding: 0 0 0 32px;
-  }
+  padding: 5px 0 0 37px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -5px;
+    top: 0;
     left: 0;
     width: 23px;
     height: 21px;
-    background-image: url("../img/icon-like.svg");
+    mask-image: url("../img/icon-like.svg");
+    background-color: $secondary-color;
+    opacity: 0.3;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding: 5px 0 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    &::before {
+      background-color: $main-color;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    color: $main-color;
   }
 }
