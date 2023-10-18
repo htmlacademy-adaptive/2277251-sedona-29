@@ -67,12 +67,17 @@
 
   &:hover {
     &::before {
-      background-color: $main-color;
+      width: 96px;
+      height: 108px;
+      transition: 0.3s linear;
     }
   }
 
   &:active {
     &::before {
+      background-color: $main-color;
+      width: 80px;
+      height: 88px;
       opacity: 0.8;
     }
   }
