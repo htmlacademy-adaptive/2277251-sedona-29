@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 36px 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 120px;
+  }
 }
 
 .footer__description-text {
@@ -19,6 +23,7 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    text-align: start;
     align-self: center;
     margin: 0;
   }
