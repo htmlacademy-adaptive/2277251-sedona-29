@@ -1,51 +1,51 @@
 .hero {
   background-color: rgba(131, 179, 211, 0.5);
-  background-image: url("../img/hero-divider.svg"), url("../img/hero-background.jpg");
+  background-image: url("../img/stack.svg#hero-divider"), url("../img/index/hero-background.jpg");
   background-repeat: no-repeat;
-  background-size: contain, cover;
   background-position: bottom, center;
+  background-size: 100% 57px, cover;
   padding: 90px 19px 85px 19px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-divider@2x.svg"), url("../img/hero-background@2x.jpg");
+    background-image: url("../img/stack.svg#hero-divider@2x"), url("../img/index/hero-background@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/hero-divider-tablet.svg"), url("../img/hero-background-tablet.jpg");
+    background-image: url("../img/stack.svg#hero-divider-tablet"), url("../img/index/hero-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-divider-tablet@2x.svg"), url("../img/hero-background-tablet@2x.jpg");
+      background-image: url("../img/stack.svg#hero-divider-tablet@2x"), url("../img/index/hero-background-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/hero-divider-desktop.svg"), url("../img/hero-background-desktop.jpg");
+    background-image: url("../img/stack.svg#hero-divider-desktop"), url("../img/index/hero-background-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-divider-desktop@2x.svg"), url("../img/hero-background-desktop@2x.jpg");
+      background-image: url("../img/stack.svg#hero-divider-desktop@2x"), url("../img/index/hero-background-desktop@2x.jpg");
     }
   }
 
   &--additional {
-    background-image: url("../img/hero-divider.svg"), url("../img/hero-background-additional.jpg");
+    background-image: url("../img/stack.svg#hero-divider"), url("../img/index/hero-background-additional.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero-divider@2x.svg"), url("../img/hero-background-additional@2x.jpg");
+      background-image: url("../img/stack.svg#hero-divider@2x"), url("../img/index/hero-background-additional@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/hero-divider-tablet.svg"), url("../img/hero-background-additional-tablet.jpg");
+      background-image: url("../img/stack.svg#hero-divider-tablet"), url("../img/index/hero-background-additional-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero-divider-tablet@2x.svg"), url("../img/hero-background-additional-tablet@2x.jpg");
+        background-image: url("../img/stack.svg#hero-divider-tablet@2x"), url("../img/index/hero-background-additional-tablet@2x.jpg");
       }
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/hero-divider-desktop.svg"), url("../img/hero-background-additional-desktop.jpg");
+      background-image: url("../img/stack.svg#hero-divider-desktop"), url("../img/index/hero-background-additional-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero-divider-desktop@2x.svg"), url("../img/hero-background-additional-desktop@2x.jpg");
+        background-image: url("../img/stack.svg#hero-divider-desktop@2x"), url("../img/index/hero-background-additional-desktop@2x.jpg");
       }
     }
   }
@@ -54,4 +54,5 @@
 .hero__img {
   display: block;
   margin: 0 auto;
+  object-fit: cover;
 }
