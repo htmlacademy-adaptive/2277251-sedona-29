@@ -21,7 +21,8 @@
 
   &:hover {
     margin-top: 20px;
-    transition: linear 0.2s;
+    transition: linear 0.2s 0.2s;
+
 
     &::before {
       content: "";
