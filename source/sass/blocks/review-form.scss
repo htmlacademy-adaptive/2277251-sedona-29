@@ -115,6 +115,10 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
+  padding: 16px 65px 16px 16px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 58px 58px;
 }
 
 .review-form__contact-info {
@@ -159,28 +163,6 @@
     font-size: 21px;
     padding: 0;
   }
-}
-
-.review-form__field-phone {
-  padding: 16px 65px 16px 16px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  background-image: url("../img/stack.svg#icon-phone");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 58px;
-}
-
-.review-form__field-email {
-  padding: 16px 65px 16px 16px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  background-image: url("../img/stack.svg#icon-mail");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 58px;
 }
 
 .review-form__list-wrapper {
@@ -302,6 +284,7 @@
   margin: 0 auto;
   padding: 16px;
   text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;

@@ -233,5 +233,10 @@
 
   &:active {
     color: $main-color;
+
+    &::before {
+      margin-top: -4px;
+      transition: 0.1s ease-out;
+    }
   }
 }

@@ -16,11 +16,6 @@
     border: none;
   }
 
-  &--error {
-    outline: 4px solid #e80a0a;
-    outline-offset: -4px;
-  }
-
   &::placeholder {
     font-family: "PT Sans", "Arial", sans-serif;
     color: rgba(0, 0, 0, 0.3);
@@ -28,5 +23,18 @@
     font-weight: 700;
     line-height: 26px;
     opacity: 1;
+  }
+
+  &--error {
+    outline: 4px solid #e80a0a;
+    outline-offset: -4px;
+  }
+
+  &--phone {
+    background-image: url("../img/stack.svg#icon-phone");
+  }
+
+  &--email {
+    background-image: url("../img/stack.svg#icon-mail");
   }
 }

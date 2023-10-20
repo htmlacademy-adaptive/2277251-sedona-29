@@ -16,7 +16,9 @@
           <img class="header__logo-img" src="img/stack.svg#logo" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <nav class="nav nav--closed nav--no-js">
-          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации."></button>
+          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+            <span class="nav__toggle-line"></span>
+          </button>
           <div class="nav__list-wrapper">
             <ul class="nav__list site-list reset-list">
               <li class="site-list__item">
@@ -154,9 +156,9 @@
         <h2 class="visually-hidden">Мы на карте.</h2>
         <div class="map__wrapper map__wrapper--no-js" id="map"></div>
         <picture>
-          <source media="(min-width: 1280px)" srcset="img/map-location-desktop.jpg 1x, img/map-location-desktop@2x.jpg 2x" width="1200" height="350">
-          <source media="(min-width: 768px)" srcset="img/map-location-tablet.jpg 1x, img/map-location-tablet@2x.jpg 2x" width="768" height="350">
-          <img class="map__image map__image--no-js" src="img/map-location.jpg" srcset="img/map-location@2x.jpg 2x" width="320" height="350" alt="Мы на карте.">
+          <source media="(min-width: 1280px)" srcset="img/index/map-location-desktop.jpg 1x, img/index/map-location-desktop@2x.jpg 2x" width="1200" height="350">
+          <source media="(min-width: 768px)" srcset="img/index/map-location-tablet.jpg 1x, img/index/map-location-tablet@2x.jpg 2x" width="768" height="350">
+          <img class="map__image map__image--no-js" src="img/index/map-location.jpg" srcset="img/index/map-location@2x.jpg 2x" width="320" height="350" alt="Мы на карте.">
         </picture>
       </section>
     </main>
@@ -179,6 +181,7 @@
     </footer>
   </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=7588d1f7-5393-400e-bb93-5c54ef7b8d5c&lang=ru_RU"></script>
+  <script src="js/map.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

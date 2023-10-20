@@ -16,7 +16,9 @@
           <img class="header__logo-img" src="img/stack.svg#logo" width="185" height="96" alt="Логотип городка Седона.">
         </a>
         <nav class="nav nav--closed nav--no-js">
-          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации."></button>
+          <button class="nav__toggle nav__toggle--no-js" type="button" aria-label="Открыть меню навигации.">
+            <span class="nav__toggle-line"></span>
+          </button>
           <div class="nav__list-wrapper">
             <ul class="nav__list site-list reset-list">
               <li class="site-list__item">
@@ -80,11 +82,11 @@
               <legend class="review-form__contact-info-title">Контактная информация:</legend>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-number">Контактный телефон*:</label>
-                <input class="review-form__field-phone field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
+                <input class="review-form__field field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
               </div>
               <div class="review-form__label-icon-wrapper">
                 <label class="review-form__label" for="user-email">Электронная почта*:</label>
-                <input class="review-form__field-email field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
+                <input class="review-form__field field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
               </div>
             </fieldset>
           </div>
@@ -175,9 +177,11 @@
         Разработано
       </a>
     </footer>
-    <div class="page__modal-container">
-      <div class="modal modal-failure">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
+    <!-- Модальное окно открывается при нажатии на кнопку "Отправить отзыв" -->
+    <!-- Для показа второго модального окна добавить класс modal--success для div ниже -->
+    <div class="modal">
+      <div class="modal__control modal__failure">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
         </p>
@@ -185,10 +189,10 @@
           Ок
         </button>
       </div>
-      <div class="modal modal-success">
+      <div class="modal__control modal__success">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__text modal__text--success">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
         </p>
         <button class="button modal__close-button" type="button">
           Закрыть окно
