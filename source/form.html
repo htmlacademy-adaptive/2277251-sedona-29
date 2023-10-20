@@ -177,9 +177,11 @@
         Разработано
       </a>
     </footer>
-    <div class="page__modal-container">
-      <div class="modal modal-failure">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
+    <!-- Модальное окно открывается при нажатии на кнопку "Отправить отзыв" -->
+    <!-- Для показа второго модального окна добавить класс modal--success для div ниже -->
+    <div class="modal modal--success">
+      <div class="modal__control modal__failure">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
         <p class="modal__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
         </p>
@@ -187,10 +189,10 @@
           Ок
         </button>
       </div>
-      <div class="modal modal-success">
+      <div class="modal__control modal__success">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__text modal__text--success">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.
         </p>
         <button class="button modal__close-button" type="button">
           Закрыть окно
