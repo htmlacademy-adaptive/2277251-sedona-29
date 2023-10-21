@@ -77,6 +77,14 @@
 
   .advantages-list__title {
     padding: 18px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
   }
 }
 
