@@ -103,12 +103,6 @@
   @media (min-width: $desktop-width) {
     padding: 52px 50px 51px 50px;
   }
-
-  &:first-child {
-    background-image: url("../img/stack.svg#divider-secondary");
-    background-repeat: no-repeat;
-    background-position: top;
-  }
 }
 
 .advantages-list__item-inner-list {
