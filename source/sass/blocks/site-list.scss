@@ -17,7 +17,7 @@
 .site-list__item:nth-child(2) {
   .site-list__link {
     @media (min-width: $tablet-width) {
-      padding: 18px 0px 17px 21px;
+      padding: 18px 0 17px 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
 
   .site-list__link {
     @media (min-width: $tablet-width) {
-      padding: 18px 21px 17px 0px;
+      padding: 18px 21px 17px 0;
     }
 
     @media (min-width: $desktop-width) {
