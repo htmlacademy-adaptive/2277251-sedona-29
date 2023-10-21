@@ -40,7 +40,7 @@
   &--extended {
     position: relative;
     background-color: #eeeeee;
-    padding: 24px 18px 24px 18px;
+    padding: 25px 18px;
 
     &:not(:last-child)::after {
       content: "";
@@ -66,6 +66,17 @@
       max-width: 400px;
       padding: 52px 50px;
     }
+  }
+}
+
+.advantages-list__item:nth-child(1) .advantages-list__item-wrapper {
+  background-image: url("../img/stack.svg#divider-secondary");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 37px;
+
+  .advantages-list__title {
+    padding: 18px 0 0 0;
   }
 }
 
