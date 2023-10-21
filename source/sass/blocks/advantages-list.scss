@@ -92,6 +92,7 @@
   padding: 37px 18px;
 
   @media (min-width: $tablet-width) {
+    padding: 52px 33px 31px 33px;
     order: 2;
   }
 
@@ -127,7 +128,8 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px 0;
+    max-width: 155px;
+    margin: 0 auto 14px auto;
     font-size: 21px;
   }
 }
@@ -146,7 +148,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 17px auto;
+    margin: 0 auto 22px auto;
   }
 
   &::before {

@@ -2,7 +2,7 @@
   padding: 40px 18px 48px 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 155px 55px 165px;
+    padding: 60px 155px 55px 155px;
   }
 }
 
@@ -16,6 +16,7 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 33px 0;
     font-size: 30px;
   }
 }
