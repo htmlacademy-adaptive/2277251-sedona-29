@@ -180,6 +180,12 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #ffffff;
+
+  &--devil-bridge {
+    @media (min-width: $desktop-width) {
+      max-width: 230px;
+    }
+  }
 }
 
 .advantages-list__image {
