@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0 0 0;
+    padding: 98px 0 0 0;
   }
 }
 
@@ -16,7 +16,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 371px;
+    padding: 0 380px 89px 380px;
   }
 }
 
@@ -86,6 +86,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 80px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__item {
@@ -153,6 +157,15 @@
     width: 100%;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--modified {
+    padding: 17px 20px 17px 25px;
+
+    .catalog__description {
+      @include flex(column);
+      gap: 4px;
+    }
   }
 }
 
