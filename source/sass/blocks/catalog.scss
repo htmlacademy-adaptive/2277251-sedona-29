@@ -160,12 +160,21 @@
   }
 
   &--modified {
-    padding: 17px 20px 17px 25px;
-
-    .catalog__description {
-      @include flex(column);
-      gap: 4px;
+    @media (min-width: $tablet-width) {
+      .catalog__description {
+        @include flex(column);
+        gap: 2px;
+      }
     }
+
+    @media (min-width: $desktop-width) {
+       padding: 17px 20px 17px 25px;
+
+       .catalog__description {
+         @include flex(column);
+         gap: 4px;
+       }
+     }
   }
 }
 
