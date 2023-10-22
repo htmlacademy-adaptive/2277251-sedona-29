@@ -28,7 +28,9 @@
   }
 
   &--additional {
+    padding: 52px 19px 68px;
     background-image: url("../img/stack.svg#hero-divider"), url("../img/index/hero-background-additional.jpg");
+    background-position: bottom, bottom;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/stack.svg#hero-divider@2x"), url("../img/index/hero-background-additional@2x.jpg");

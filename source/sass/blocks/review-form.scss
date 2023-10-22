@@ -1,6 +1,6 @@
 .review-form {
   position: relative;
-  padding: 24px 20px 22px 20px;
+  padding: 24px 20px 16px 20px;
 
   &::before {
     content: "";
@@ -95,7 +95,7 @@
 
 .review-form__introduce-list {
   @include flex(column);
-  gap: 16px;
+  gap: 15px;
 }
 
 .review-form__label-icon-wrapper:not(:last-child) {
@@ -112,6 +112,7 @@
 }
 
 .review-form__field {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -171,7 +172,7 @@
   padding: 0 0 24px 0;
   border: none;
 
-  &::after {
+  &:not(:last-child)::after {
     content: "";
     position: absolute;
     width: calc(100% + 40px);
@@ -276,6 +277,10 @@
     gap: 64px;
     padding: 31px;
   }
+}
+
+.review-form__describe-emotions {
+  padding-bottom: 0;
 }
 
 .review-form__send-review-button {
