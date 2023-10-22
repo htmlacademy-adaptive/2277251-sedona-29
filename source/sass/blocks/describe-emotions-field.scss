@@ -8,6 +8,7 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px 0;
+    max-height: 160px;
+    margin: 0 0 44px 0;
   }
 }

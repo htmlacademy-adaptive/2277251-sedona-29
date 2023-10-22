@@ -37,6 +37,7 @@
     }
 
     @media (min-width: $tablet-width) {
+      padding: 95px 19px 118px;
       background-image: url("../img/stack.svg#hero-divider-tablet"), url("../img/index/hero-background-additional-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
