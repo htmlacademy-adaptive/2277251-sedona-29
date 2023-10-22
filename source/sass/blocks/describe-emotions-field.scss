@@ -11,4 +11,10 @@
     max-height: 160px;
     margin: 0 0 44px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 768px;
+    margin: 0 auto 44px auto;
+  }
 }

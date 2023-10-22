@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px 64px 120px;
+    padding: 0 120px 79px 120px;
   }
 }
 
@@ -193,7 +193,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 56px 0;
+    padding: 0 0 73px 0;
   }
 
   &--attractions {
@@ -202,7 +202,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 0 56px 0;
+      padding: 0 0 72px 0;
     }
   }
 }
@@ -240,6 +240,10 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 46px 0;
+  }
 }
 
 .review-form__radio-list {
@@ -255,8 +259,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 28px;
     justify-content: center;
-    gap: 28px;
+    gap: 34px;
     max-width: none;
   }
 }
@@ -276,12 +281,18 @@
   @media (min-width: $desktop-width) {
     @include flex(row, normal, center);
     gap: 64px;
-    padding: 31px;
+    padding: 14px 45px;
   }
 }
 
 .review-form__describe-emotions {
   padding-bottom: 0;
+}
+
+.review-form__describe-emotions-title {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 31px;
+  }
 }
 
 .review-form__send-review-button {
@@ -300,6 +311,11 @@
     max-width: 324px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 384px;
+    margin-left: 96px;
+  }
 }
 
 .review-form__text-required-fields {
@@ -314,5 +330,9 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     margin-top: -36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -34px 96px 0 0;
   }
 }

@@ -5,6 +5,10 @@
   font-weight: 700;
   line-height: 26px;
   color: $secondary-color;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 10px 62px;
+  }
 }
 
 .checkbox-list__control {
@@ -18,8 +22,8 @@
   position: absolute;
   width: 20px;
   height: 3px;
-  top: 22px;
-  left: 18px;
+  top: 21px;
+  left: 17px;
   background-color: $additional-color;
   transform: rotate(-45deg);
   border-radius: 2px;
@@ -30,8 +34,8 @@
   position: absolute;
   width: 12px;
   height: 3px;
-  top: 25px;
-  left: 12px;
+  top: 24px;
+  left: 11px;
   background-color: $additional-color;
   transform: rotate(45deg);
   border-radius: 2px;

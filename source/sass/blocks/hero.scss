@@ -46,6 +46,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding: 103px 19px 118px;
       background-image: url("../img/stack.svg#hero-divider-desktop"), url("../img/index/hero-background-additional-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
