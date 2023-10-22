@@ -56,13 +56,15 @@
     }
 
     @media (min-width: $tablet-width) {
+      display: inline;
       position: static;
       grid-template-columns: auto;
       max-width: 256px;
-      padding: 41px 33px 63px 33px;
+      padding: 41px 33px 43px 33px;
     }
 
     @media (min-width: $desktop-width) {
+      display: grid;
       max-width: 400px;
       padding: 52px 50px;
     }
@@ -185,6 +187,28 @@
     @media (min-width: $desktop-width) {
       max-width: 230px;
     }
+  }
+
+  &--positioning {
+    max-width: 250px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      max-width: none;
+      margin: 0;
+    }
+  }
+}
+
+.advantages-list__square-break {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-list__road-break {
+  @media (max-width: 767px) {
+    display: none;
   }
 }
 

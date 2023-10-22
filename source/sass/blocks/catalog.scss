@@ -168,13 +168,13 @@
     }
 
     @media (min-width: $desktop-width) {
-       padding: 17px 20px 17px 25px;
+      padding: 17px 20px 17px 25px;
 
-       .catalog__description {
-         @include flex(column);
-         gap: 4px;
-       }
-     }
+      .catalog__description {
+        @include flex(column);
+        gap: 4px;
+      }
+    }
   }
 }
 

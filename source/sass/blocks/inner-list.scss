@@ -93,6 +93,14 @@
       background-size: contain;
 
       @media (min-width: $tablet-width) {
+        width: 82px;
+        height: 82px;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @media (min-width: $desktop-width) {
         width: 78px;
         height: 76px;
         top: 69px;
@@ -140,9 +148,29 @@
     max-width: 300px;
   }
 
-  &--souvenir {
+  &--food {
     @media (min-width: $desktop-width) {
-      max-width: 260px;
+      margin: 0 0 4px 0;
+    }
+  }
+
+  &--souvenir {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 4px -4px;
+      max-width: 180px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      max-width: 215px;
+    }
+  }
+
+  .inner-list__break {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
     }
   }
 }

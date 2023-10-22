@@ -6,3 +6,11 @@
   font-weight: 400;
   line-height: 21px;
 }
+
+.page__map {
+  margin: 0 0 8px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
