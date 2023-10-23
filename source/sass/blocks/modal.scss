@@ -49,12 +49,13 @@
 
   @media (min-width: $tablet-width) {
     width: 640px;
-    padding: 53px 91px 44px 91px;
+    padding: 53px 91px 47px 91px;
     background: linear-gradient(to bottom, #ffffff 58%, #f2f2f2 58%);
   }
 
   .modal__title {
     @media (min-width: $tablet-width) {
+      margin: 0 0 28px;
       line-height: 26px;
     }
   }
@@ -91,7 +92,7 @@
   color: $additional-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 41px;
+    margin: 0 0 47px;
   }
 
   &--success {
@@ -100,7 +101,7 @@
 
     @media (min-width: $tablet-width) {
       max-width: 444px;
-      margin: 0 auto 100px auto;
+      margin: 0 auto 95px auto;
     }
   }
 }
@@ -109,7 +110,8 @@
   position: relative;
   margin: 0 auto;
   display: block;
-  padding: 17px 64px 15px 64px;
+  min-width: 180px;
+  padding: 17px 76px 15px 76px;
   text-align: center;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -117,4 +119,9 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    min-width: 272px;
+    font-size: 21px;
+  }
 }
