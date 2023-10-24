@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Седона: Оставьте свой отзыв.">
   <title>Седона: Оставьте свой отзыв</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon.png">
   <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body class="page__body">
   <div class="container">
@@ -49,7 +52,11 @@
     <main class="page__main">
       <section class="page__hero hero hero--additional">
         <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-        <img class="hero__img" src="img/stack.svg#sedona" width="229" height="39" alt="Седона.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/stack.svg#sedona-desktop 1x, img/stack.svg#sedona-desktop@2x 2x" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/stack.svg#sedona-tablet 1x, img/stack.svg#sedona-tablet@2x 2x" width="457" height="78">
+          <img class="hero__img" src="img/stack.svg#sedona" srcset="img/stack.svg#sedona@2x 2x" width="229" height="39" alt="Седона.">
+        </picture>
       </section>
       <section class="page__review-form">
         <div class="review-form-heading">
@@ -64,7 +71,7 @@
               <legend class="review-form__title">Представьтесь:</legend>
               <ul class="review-form__introduce-list reset-list">
                 <li class="review-form__introduce-item">
-                  <label class="review-form__label" for="user-name">Имя:*</label>
+                  <label class="review-form__label" for="user-name">Имя*:</label>
                   <!-- Для показа состояния ошибки инпута добавить класс field--error -->
                   <input class="review-form__field field field--name" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя" value="Пётр" required>
                 </li>
@@ -80,14 +87,16 @@
             </fieldset>
             <fieldset class="review-form__contact-info">
               <legend class="review-form__contact-info-title">Контактная информация:</legend>
-              <div class="review-form__label-icon-wrapper">
-                <label class="review-form__label" for="user-number">Контактный телефон*:</label>
-                <input class="review-form__field field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
-              </div>
-              <div class="review-form__label-icon-wrapper">
-                <label class="review-form__label" for="user-email">Электронная почта*:</label>
-                <input class="review-form__field field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
-              </div>
+                <ul class="review-form__introduce-list reset-list">
+                  <li class="review-form__introduce-item">
+                    <label class="review-form__label" for="user-number">Контактный телефон*:</label>
+                    <input class="review-form__field field field--phone" type="tel" name="user-number" id="user-number" aria-label="Ваш номер телефона." placeholder="Введите телефон" required>
+                  </li>
+                  <li class="review-form__introduce-item">
+                    <label class="review-form__label" for="user-email">Электронная почта*:</label>
+                    <input class="review-form__field field field--email" type="email" name="user-email" id="user-email" placeholder="Введите e-mail." aria-label="Ваш email" required>
+                  </li>
+                </ul>
             </fieldset>
           </div>
           <fieldset class="review-form__list-wrapper">

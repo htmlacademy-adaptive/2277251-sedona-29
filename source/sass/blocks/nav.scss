@@ -105,9 +105,15 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 0 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 185px 1fr 1fr;
     background-color: initial;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 240px 1fr 1fr;
   }
 }
 

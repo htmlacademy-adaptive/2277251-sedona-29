@@ -6,17 +6,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 0 0 0;
+    padding: 98px 0 0 0;
   }
 }
 
 .catalog__heading {
   @media (min-width: $tablet-width) {
-    padding: 0 155px;
+    padding: 0 105px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 371px;
+    padding: 0 380px 89px 380px;
   }
 }
 
@@ -70,22 +70,31 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
     font-size: 30px;
   }
 }
 
 .catalog__text {
-  margin: 0 0 50px 0;
+  margin: 0 0 37px 0;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: $additional-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .catalog__item {
   position: relative;
-  padding: 24px 0 25px 0;
+  padding: 24px 0 0 0;
 
   &:not(:last-child)::after {
     content: "";
@@ -132,6 +141,7 @@
 }
 
 .catalog__item-caption {
+  @include flex(column);
   padding: 15px 0 25px 0;
 
   @media (min-width: 600px) {
@@ -148,6 +158,24 @@
     width: 100%;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--modified {
+    @media (min-width: $tablet-width) {
+      .catalog__description {
+        @include flex(column);
+        gap: 2px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 17px 20px 17px 25px;
+
+      .catalog__description {
+        @include flex(column);
+        gap: 4px;
+      }
+    }
   }
 }
 
@@ -177,6 +205,7 @@
   display: block;
   font-weight: 400;
   line-height: 21px;
+  text-transform: none;
   color: $additional-color;
 
   @media (min-width: $desktop-width) {
@@ -186,6 +215,7 @@
 
 .catalog__likes-quantity {
   position: relative;
+  align-self: flex-start;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -195,12 +225,12 @@
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 5px 0 0 37px;
+  padding: 2px 0 0 37px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 23px;
     height: 21px;
@@ -208,11 +238,15 @@
     background-color: $secondary-color;
     opacity: 0.3;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: -4px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    padding: 5px 0 0 32px;
+    padding: 0 0 0 32px;
   }
 
   @media (min-width: $desktop-width) {

@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 78px 19px 90px 19px;
     background-image: url("../img/stack.svg#hero-divider-tablet"), url("../img/index/hero-background-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -27,13 +28,16 @@
   }
 
   &--additional {
+    padding: 52px 19px 68px;
     background-image: url("../img/stack.svg#hero-divider"), url("../img/index/hero-background-additional.jpg");
+    background-position: bottom, bottom;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/stack.svg#hero-divider@2x"), url("../img/index/hero-background-additional@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
+      padding: 95px 19px 118px;
       background-image: url("../img/stack.svg#hero-divider-tablet"), url("../img/index/hero-background-additional-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -42,6 +46,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding: 103px 19px 118px;
       background-image: url("../img/stack.svg#hero-divider-desktop"), url("../img/index/hero-background-additional-desktop.jpg");
 
       @media (min-resolution: 2dppx) {

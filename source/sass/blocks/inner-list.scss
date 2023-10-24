@@ -1,4 +1,4 @@
-.inner-advantages-list {
+.inner-list {
   @include flex(column);
   gap: 25px;
   padding: 23px 18px 46px 18px;
@@ -12,7 +12,7 @@
   }
 }
 
-.inner-advantages-list__item {
+.inner-list__item {
   position: relative;
   padding: 0 0 0 47px;
 
@@ -40,10 +40,14 @@
 
       @media (min-width: $tablet-width) {
         width: 77px;
-        height: 72px;
-        top: 60px;
+        height: 77px;
+        top: 58px;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 68px;
       }
     }
   }
@@ -61,11 +65,17 @@
       background-size: contain;
 
       @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 68px;
-        top: 62px;
+        width: 81px;
+        height: 78px;
+        top: 57px;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 75px;
+        height: 75px;
+        top: 69px;
       }
     }
   }
@@ -83,17 +93,25 @@
       background-size: contain;
 
       @media (min-width: $tablet-width) {
-        width: 67px;
-        height: 75px;
-        top: 64px;
+        width: 82px;
+        height: 82px;
+        top: 60px;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 78px;
+        height: 76px;
+        top: 69px;
+        left: 50%;
+        transform: translateX(-50%) scaleX(1.3);
       }
     }
   }
 }
 
-.inner-advantages-list__title {
+.inner-list__title {
   padding: 8px 0 0 0;
   font-size: 18px;
   font-weight: 700;
@@ -104,14 +122,15 @@
   color: $secondary-color;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 34px 0;
+    margin: 0 0 25px 0;
     padding: 0;
     text-align: center;
     font-size: 21px;
   }
 }
 
-.inner-advantages-list__description {
+.inner-list__description {
+  margin: 0;
   text-align: start;
   font-size: 14px;
   font-weight: 400;
@@ -121,10 +140,41 @@
   align-self: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 190px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 300px;
+  }
+
+  &--food {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 2px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 4px 0;
+    }
+  }
+
+  &--souvenir {
+    @media (min-width: $tablet-width) {
+      margin: 0 0 4px -4px;
+      max-width: 180px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      max-width: 215px;
+    }
+  }
+
+  .inner-list__break {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 }
