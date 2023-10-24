@@ -21,18 +21,26 @@ navToggle.addEventListener('click', function () {
 
 const modal = document.querySelector('.modal');
 const btn = document.querySelector('.review-form__send-review-button');
-const closeBtn = document.querySelector('.modal__close-button');
+const closeBtn = Array.from(document.querySelectorAll('.modal__close-button'));
 
 btn.addEventListener('click', (evt) => {
   modal.style.display = "flex";
 });
 
-closeBtn.addEventListener('click', (event) => {
-  modal.style.display = "none";
+closeBtn.forEach(closeBtn => {
+  closeBtn.addEventListener('click', (event) => {
+    modal.style.display = "none";
+  });
 });
 
 window.addEventListener('click', (event) => {
   if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
     modal.style.display = "none";
   }
 });
