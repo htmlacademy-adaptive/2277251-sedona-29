@@ -247,14 +247,14 @@
   @media (min-width: $tablet-width) {
     max-width: 402px;
     background-color: #ffffff;
-    margin: 0 0 28px 0;
+    margin: 0 auto 28px auto;
     padding: 0;
     font-size: 21px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 46px 0;
+    margin: 0 auto 46px auto;
   }
 }
 
@@ -305,7 +305,7 @@
 
 .review-form__describe-emotions-title {
   @media (min-width: $desktop-width) {
-    margin: 0 0 29px;
+    margin: 0 auto 29px auto;
   }
 }
 
