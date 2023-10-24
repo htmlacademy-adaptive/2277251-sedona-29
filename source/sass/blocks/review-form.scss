@@ -18,11 +18,11 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    padding: 0 60px 64px 60px;
+    padding: 0 60px 77px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px 64px 120px;
+    padding: 0 120px 77px 120px;
   }
 }
 
@@ -247,14 +247,14 @@
   @media (min-width: $tablet-width) {
     max-width: 402px;
     background-color: #ffffff;
-    margin: 0 0 28px 0;
+    margin: 0 auto 28px auto;
     padding: 0;
     font-size: 21px;
     z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 46px 0;
+    margin: 0 auto 46px auto;
   }
 }
 
@@ -291,8 +291,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(row, normal, center);
-    gap: 64px;
+    display: grid;
+    grid-template-columns: 172px 170px 153px 184px;
+    justify-content: center;
+    gap: 32px 64px;
     padding: 14px 45px;
   }
 }
@@ -303,7 +305,7 @@
 
 .review-form__describe-emotions-title {
   @media (min-width: $desktop-width) {
-    margin: 0 0 29px;
+    margin: 0 auto 29px auto;
   }
 }
 
@@ -343,12 +345,10 @@
   @media (min-width: $tablet-width) {
     max-width: 192px;
     font-size: 14px;
-    margin-top: -36px;
-    position: absolute;
-    right: 0;
+    margin: -35px 0 0 456px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -34px 96px 0 0;
+    margin: -34px 96px 0 672px;
   }
 }
