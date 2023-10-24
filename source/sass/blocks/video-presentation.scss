@@ -64,12 +64,13 @@
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.3s linear
   }
 
   &:hover {
     &::before {
-      width: 96px;
-      height: 108px;
+      width: 60px;
+      height: 67px;
       transition: 0.3s linear;
     }
   }
@@ -77,8 +78,8 @@
   &:active {
     &::before {
       background-color: $main-color;
-      width: 80px;
-      height: 88px;
+      width: 78px;
+      height: 86px;
       opacity: 0.8;
     }
   }
