@@ -12,18 +12,9 @@
 }
 
 .checkbox-list__control {
+  @include flex (row);
   position: relative;
-  max-width: 280px;
-  display: flex;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    max-width: 224px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 184px;
-  }
 }
 
 .checkbox-list__field:checked + .checkbox-list__control-outline::before {
