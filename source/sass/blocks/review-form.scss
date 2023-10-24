@@ -18,11 +18,11 @@
 
   @media (min-width: $tablet-width) {
     position: static;
-    padding: 0 60px 64px 60px;
+    padding: 0 60px 77px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px 64px 120px;
+    padding: 0 120px 77px 120px;
   }
 }
 
@@ -291,7 +291,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include flex(row, normal, center);
+    display: grid;
+    grid-template-columns: 172px 170px 153px 184px;
+    justify-content: center;
     gap: 32px 64px;
     padding: 14px 45px;
   }
@@ -343,12 +345,10 @@
   @media (min-width: $tablet-width) {
     max-width: 192px;
     font-size: 14px;
-    margin-top: -36px;
-    position: absolute;
-    right: 0;
+    margin: -35px 0 0 456px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: -34px 96px 0 0;
+    margin: -34px 96px 0 672px;
   }
 }
