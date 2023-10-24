@@ -292,7 +292,7 @@
 
   @media (min-width: $desktop-width) {
     @include flex(row, normal, center);
-    gap: 64px;
+    gap: 32px 64px;
     padding: 14px 45px;
   }
 }
